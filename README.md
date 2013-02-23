@@ -24,14 +24,13 @@ Or install it yourself as:
 <%= ohayo_tag(@user.email) %>
 ```
 
-*Ohayo* uses the MD5 of your user's email to retrieve the bio, so no user
-emails are passed across the web.
+*Ohayo* uses the MD5 of your user's email to retrieve the bio, so no user emails are passed across the web.
 
-You can customize the error message if a bio cannot be retrieved for the user's
-email:
+You can customize the error message if a bio cannot be retrieved for the user's email:
 
 ```erb
 <%= ohayo_tag(@user.email), error: 'Please use Ohayo!' %>
+```
 
 ## Contributing
 
