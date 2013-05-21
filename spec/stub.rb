@@ -1,11 +1,11 @@
-class OhayoRailsHelperStub
-  include Rails::OhayoRailsHelper::Helper
+class MoshimoshiRailsHelperStub
+  include Rails::MoshimoshiRailsHelper::Helper
 
-  def ohayo_tag(email)
+  def moshimoshi_tag(email)
     require 'httparty'
     email_address = email.downcase
     hash = Digest::MD5.hexdigest(email_address)
-    response = HTTParty.get("http://ohayo.io/api/users/show/#{ hash }")
+    response = HTTParty.get("http://moshimoshi.me/api/users/show/#{ hash }")
     return response.body
   end
 end

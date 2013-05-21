@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'bundler/setup'
-require 'ohayo-rails-helper'
+require 'moshimoshi-rails-helper'
 require 'stub'
 
 RSpec.configure do |config|
