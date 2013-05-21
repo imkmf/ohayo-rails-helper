@@ -27,11 +27,11 @@ Or install it yourself as:
 *Moshimoshi* uses the MD5 of your user's email to retrieve the bio, so no user
 emails are passed across the web.
 
-You can customize the error message if a bio cannot be retrieved for the user's
-email:
+You can customize the error message if a bio cannot be retrieved for the user's email:
 
 ```erb
 <%= moshimoshi_tag(@user.email), error: 'Bio missing from Moshimoshi' %>
+```
 
 ## Contributing
 
